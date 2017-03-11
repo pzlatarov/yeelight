@@ -17,17 +17,17 @@ namespace ConsoleApplication1
            // bulbs[0].RunMethod(20, "set_power", new object[] { "on", "smooth", 500 });
            // Thread.Sleep(5000);
            // bulbs[0].RunMethod(20, "set_power", new object[] { "off", "smooth", 500 });
-            bulbs[0].PowerState = Yeelight.PowerStateType.On;
-            Thread.Sleep(2000);
-            bulbs[0].PowerState = Yeelight.PowerStateType.Off;
-            Thread.Sleep(2000);
-            bulbs[0].PowerState = Yeelight.PowerStateType.On;
-            Thread.Sleep(2000);
-            bulbs[0].PowerState = Yeelight.PowerStateType.Off;
-            Thread.Sleep(2000);
-            bulbs[0].PowerState = Yeelight.PowerStateType.On;
-            Thread.Sleep(2000);
-            bulbs[0].PowerState = Yeelight.PowerStateType.Off;
+            //bulbs[0].PowerState = Yeelight.PowerStateType.On;
+            //Thread.Sleep(2000);
+            //bulbs[0].PowerState = Yeelight.PowerStateType.Off;
+            //Thread.Sleep(2000);
+            //bulbs[0].PowerState = Yeelight.PowerStateType.On;
+            //Thread.Sleep(2000);
+            //bulbs[0].PowerState = Yeelight.PowerStateType.Off;
+            //Thread.Sleep(2000);
+            //bulbs[0].PowerState = Yeelight.PowerStateType.On;
+            //Thread.Sleep(2000);
+            //bulbs[0].PowerState = Yeelight.PowerStateType.Off;
 
 
         }

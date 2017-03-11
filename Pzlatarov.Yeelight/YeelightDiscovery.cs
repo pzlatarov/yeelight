@@ -60,7 +60,7 @@ namespace Pzlatarov.Yeelight
 
             }
             }
-
+            AweSock.CloseSock(clientSocket);
             return discoveredYeelights;
         }
     }
