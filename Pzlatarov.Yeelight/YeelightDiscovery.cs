@@ -22,7 +22,7 @@ namespace Pzlatarov.Yeelight
             Buffer.Add(msgBuffer,msg);
             Buffer.FinalizeBuffer(msgBuffer);
             var clientSocket = AweSock.UdpConnect(59599);
-            clientSocket.GetSocket().ReceiveTimeout = 2000;
+            clientSocket.GetSocket().ReceiveTimeout = 5000;
             AweSock.SendMessage(clientSocket, "239.255.255.250", 1982, msgBuffer);
             string globalBuffer = "";
             while (true)
@@ -33,7 +33,8 @@ namespace Pzlatarov.Yeelight
                     Buffer.FinalizeBuffer(receiveBuffer);
                      globalBuffer += encoding.GetString(Buffer.GetBuffer(receiveBuffer)).Trim().Replace("\0","");
                 }
-                catch (SocketException)
+
+                catch (SocketException e)
                 {
                     break;
                 }
